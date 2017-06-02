@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
 
 
 
@@ -31,8 +41,8 @@
       if(!is_dir('posts')) {
           mkdir('posts');
       }
-      $fichier = fopen('posts/' . $titre
-      . '.txt', 'w');
+      $fichier = fopen('posts/' . $titre . '.txt', 'w');
+      
       fwrite($fichier, $text);
       fclose($fichier);
       echo '<p>bravo tu as écrit un fichier</p>';
@@ -40,3 +50,11 @@
   //     echo '<p>formulaire non envoyé</p>';
   // }
 ?>
+<a href="indexblog.php">
+    <button>Maison</button>
+    </a>
+    <a href="create.html">
+    <button>Create TXT</button>
+    </a>
+</body>
+</html>
