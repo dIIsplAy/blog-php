@@ -46,7 +46,7 @@
 </div>
 <?php
 
-include ('/home/cristophol/dev/cours-php/exo-register/header.php');
+include ('header.php');
 echo '<h3 id="mamen"> LA DESSOUS YA TES FICHIER MAMENNN BREBIS GALEUSE VA</h3> ';
 $dossier = "posts/";
 $table = array_filter(scandir($dossier),function ($jambon){
