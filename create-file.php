@@ -38,10 +38,10 @@
       }
       $titre = htmlspecialchars($_POST['title']);
       $text = htmlspecialchars($_POST['text']);
-      if(!is_dir('posts')) {
-          mkdir('posts');
+      if(!is_dir('./posts')) {
+          mkdir('./posts');
       }
-      $fichier = fopen('posts/' . $titre . '.txt', 'w');
+      $fichier = fopen('./posts/' . $titre . '.txt', 'w');
       
       fwrite($fichier, $text);
       fclose($fichier);

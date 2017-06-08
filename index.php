@@ -58,12 +58,12 @@ foreach ($table as $clef) {
   echo '<div class="fichier">';  
     echo "<h3>" . $clef . "</h3>";
     echo file_get_contents($dossier. $clef);
-    echo "<form action='modif.php' method='POST'>
+    echo "<form action='../blog-php/modif.php' method='POST'>
     <input type='hidden' value='".$clef."' name='file'>
     <button>Change</button>
     
     </form>";
-      echo "<form action='deletemodif.php' method='POST'>
+      echo "<form action='../blog-php/deletemodif.php' method='POST'>
            <input type='hidden' value='".$clef."' name='file'>
            <button>Delete</button>
 
