@@ -12,7 +12,7 @@
     echo 'fichier suprimé';
 
     ?>
-    <a href="indexblog.php">
+    <a href="index.php">
     <button>Maison</button>
     </a>
 </body>

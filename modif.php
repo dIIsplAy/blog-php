@@ -13,10 +13,10 @@
      
     $tata = file_get_contents("posts/". $_POST['file']);
      echo "<form action='newmodif.php' method='POST'>";
-     echo "<input type='text' name='titre' value='".$_POST['file']."'>";
-     echo "<input type='hidden' name='last' value='".$_POST['file']."'>";
+     echo "<input type='text' name='titre' value='".htmlspecialchars($_POST['file'])."'>";
+     echo "<input type='hidden' name='last' value='".htmlspecialchars($_POST['file'])."'>";
      echo"<textarea name='contenue' clos='35' rows='7'>".$tata."</textarea>";
-     echo"<input type='hidden' name='file' value='".$_POST['file']."'>";
+     echo"<input type='hidden' name='file' value='".htmlspecialchars($_POST['file'])."'>";
     echo"<button>Change</button>";
     echo"</form>";
     

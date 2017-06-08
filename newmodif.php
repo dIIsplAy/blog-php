@@ -17,11 +17,11 @@
     fclose($file);
       
 
-    echo 'Votre fichier a bien été modifier!'
+    echo 'Votre fichier a bien été modifier!';
 
     
     ?>
-    <a href="indexblog.php">
+    <a href="index.php">
     <button>Maison</button>
     </a>
     <a href="create.html">

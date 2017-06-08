@@ -36,8 +36,8 @@
           echo '<p>formulaire non envoyé</p>';
           exit(1);
       }
-      $titre = $_POST['title'];
-      $text = $_POST['text'];
+      $titre = htmlspecialchars($_POST['title']);
+      $text = htmlspecialchars($_POST['text']);
       if(!is_dir('posts')) {
           mkdir('posts');
       }
@@ -50,7 +50,7 @@
   //     echo '<p>formulaire non envoyé</p>';
   // }
 ?>
-<a href="indexblog.php">
+<a href="index.php">
     <button>Maison</button>
     </a>
     <a href="create.html">
